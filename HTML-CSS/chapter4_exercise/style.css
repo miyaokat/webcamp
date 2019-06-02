@@ -1,0 +1,118 @@
+/*リセットCSS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	clear:  both;
+}
+
+header{
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* ナビゲーションメニュー */
+.nav-list{
+	text-align: center;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 15px 0px;
+}
+.nav-list-item{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 20px;
+}
+/* Main部分 */
+.main{
+	width: 800px;
+	height: 600px;
+	margin: 50px auto;
+}
+.green1 {
+	width: 200px;
+	height: 200px;
+	background-color: #e6ffe9;
+	float: left;
+}
+.green2 {
+	width: 200px;
+	height: 200px;
+	background-color: #cdffd3;
+	float: left;
+}
+.green3{
+	width: 200px;
+	height: 200px;
+	background-color: #aeffbd;
+	float: left;
+}
+.green4{
+	width: 200px;
+	height: 200px;
+	background-color: #93ffab;
+	float: left;
+}
+.yellow1{
+	width: 200px;
+	height: 200px;
+	background-color: #f3ffd8;
+	float: left;
+}
+.yellow2{
+	width: 200px;
+	height: 200px;
+	background-color: #edffbe;
+	float: left;
+}
+.yellow3{
+	width: 200px;
+	height: 200px;
+	background-color: #e9ffa5;
+	float: left;
+}
+.yellow4{
+	width:200px;
+	height:200px;
+	background-color: #e4ff8d;
+	float: left;
+}
+.blue1{
+	width: 200px;
+	height: 200px;
+	background-color: #d9e5ff;
+	float: left;
+}
+.blue2{
+	width: 200px;
+	height: 200px;
+	background-color: #bad3ff;
+	float: left;
+}
+.blue3{
+	width: 200px;
+	height: 200px;
+	background-color: #a4c6ff;
+	float: left;
+}
+.blue4{
+	width: 200px;
+	height: 200px;
+	background-color: #8eb8ff;
+	float: left;
+}
+/* footer部分 */
+footer{
+	width: 100%;
+	height: 120px;
+	background-color: #848282;
+	text-align: center; 
+	line-height: 120px;
+}
+.footer-text{
+	color: #fff;
+}
