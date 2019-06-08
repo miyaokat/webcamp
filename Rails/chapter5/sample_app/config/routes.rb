@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
 
-get 'top' => 'root#top'
+    get 'posts/new'
+	get 'top' => 'root#top'
+	post 'posts' => 'posts#create'
 end
