@@ -1,0 +1,31 @@
+<!--ユーザーの詳細画面。そのユーザーが投稿した本の一覧が見える。自分のページの場合、マイページということになる-->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3"">
+			<%= render 'users/common', users: @user %>
+		</div>
+		<div class="col-lg-9">
+			<h2>Books</h2>
+			<table class="table table-condensed">
+				<thead>
+					<th colspan="1"></th>
+					<th>Title</th>
+					<th>Opinion</th>
+					<% @books.each do |bs| %>
+				</thead>
+				<tr>
+					<td>
+						<%= link_to user_path(@user.id) do %>
+						<%= attachment_image_tag bs.user, :profile_image, size: "100x100", fallback: "no_image.jpg" %>
+						<% end %>
+					</td>
+					<td>
+						<%= link_to bs.title, book_path(bs.id)%>
+					</td>
+					<td><%= bs.body%></td>
+					<% end %>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
